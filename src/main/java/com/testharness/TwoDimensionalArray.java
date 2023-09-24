@@ -20,6 +20,7 @@ public class TwoDimensionalArray {
   public void insertValueInTheArray(int row, int col, int value) {
     try {
       if (arr[row][col] == Integer.MIN_VALUE) {
+
         arr[row][col] = value;
         System.out.println("The value is successfully inserted");
       } else {
@@ -45,6 +46,8 @@ public class TwoDimensionalArray {
   // Traverse 2D array
 
   public void traverse2DArray() {
+    //Stream<List<Double>> listStream = Stream.of(list1, list2, list3);
+
     for (int row=0; row < arr.length; row++) {
       for (int col=0; col < arr[0].length; col++) {
         System.out.print(arr[row][col] + "  ");

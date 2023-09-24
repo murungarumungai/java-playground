@@ -8,7 +8,23 @@ import java.util.stream.Collectors;
 public class Main {
 
     public static void main(String[] args) {
-        // write your code here
+
+        Stack stacki = new Stack();
+        stacki.push(1);
+        stacki.push(2);
+        stacki.push(3);
+        stacki.push(4);
+
+        stacki.pop();
+
+        System.out.println(stacki.peek());
+        System.out.println(stacki.size());
+        System.out.println(stacki.isEmpty());
+        System.out.println(stacki.search(3));
+        System.out.println(stacki.search(2));
+        System.out.println(stacki.search(1));
+        System.out.println(stacki);
+
 
         /*Main fibo = new Main();
 
@@ -23,6 +39,13 @@ public class Main {
         //String[] words = str2.split("\\W+");
         TwoDimensionalArray twoDimensionalArray = new TwoDimensionalArray(2,3);
 
+        Stack stack = new Stack();
+        stack.push(1);
+        stack.peek();
+
+        TreeMap treeMap = new TreeMap<String, Integer>();
+        treeMap.put("1",1);
+        treeMap.put("1",1d);
 
 
         List<String> words = new ArrayList<String>();

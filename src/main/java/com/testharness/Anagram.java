@@ -62,12 +62,12 @@ public class Anagram {
 
     public  static List<String> funWithAnagrams(List<String> text) {
 
-        /*Optional<String> item = text.stream().reduce((a, b)->{
+        Optional<String> item = text.stream().reduce((a, b)->{
             if(a.length()==b.length())
                 System.out.println("Same "+a);
                 //text.remove(b);
             return b; // will be "a" for next reduction
-        });*/
+        });
 
         int index = 0;
         for (String s: text) {

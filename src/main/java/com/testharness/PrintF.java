@@ -1,6 +1,9 @@
 package com.testharness;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class PrintF {
 
@@ -23,7 +26,21 @@ public class PrintF {
             System.out.println(col2);
             System.out.printf("%s %s", col1,col2);
         }
+
+
     }
 
+
+    public static void calcMissing(List<String> readings) {
+        // Write your code here
+        List<Double> nonMissing = new ArrayList<>();
+
+        readings.stream()
+                .filter(reading -> !reading.contains("Missing"))
+                .map(r -> r.split(" "))
+                .map(a -> Double.valueOf(a[2]))
+                .collect(Collectors.toList());
+
+    }
 
 }

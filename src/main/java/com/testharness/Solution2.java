@@ -9,7 +9,7 @@ package com.testharness;
 import java.util.List;
 import java.util.stream.Collectors;
 
-class Solution {
+class Solution2 {
 
     static final int OUT = 0;
     static final int IN = 1;
